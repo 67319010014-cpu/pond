@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>สภาพอากาศ</title>
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+    <div class="weather-card">
+        <h1>สภาพอากาศ</h1>
+        <select name="province" id="province-select" onchange="getWeather()">
+            <option value="Bangkok">กรุงเทพมหานครฯ</option>
+            <option value="Chaing Mai">เชียงใหม่</option>
+            <option value="Phuket">ภูเก็ต</option>
+            <option value="Nakhon Ratchasima">นครราชศรีมา</option>
+            <option value="Nakhon Sawan">นครสวรรค์</option>
+        </select>
+        <img src="" id="weather-icon" alt="" class="icon">
+        <div class="temp" id="temp"></div>
+        <div class="description" id="description"></div>
+        <div class="detail">
+        
+            <span id="humidity"></span>
+        </div>
+        <div>
+            <span id="wind"></span>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
